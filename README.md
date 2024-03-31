@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Setting Up Routes 
+-first Install npm install -D react-router-dom
+-creating routes using createBrowserRoutes name export of react-router-dom 
+ const appRoutes= createBrowserRoutes([
+    {
+        path:"/",
+        elements:<Login>
+    },
+    {
+        path:"/browse",
+        elements:<Browse>
+    }
+
+ ])
+ -provide routing to our web app
+  By using routerProvider name export of react-router-dom
+  <RouterProvider router={appRoutes}>
